@@ -8,4 +8,5 @@ while i >= 0:
         result_sum += i
     i -= 1
 
-print(result_sum)
+print("Результат:", result_sum)
+
