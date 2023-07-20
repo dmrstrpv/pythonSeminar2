@@ -9,13 +9,18 @@ from fractions import Fraction
 a, b = map(int, input("Введите дробь вида “a/b” где а числитель и b знаменатель: ").split("/"))
 c, d = map(int, input("Введите вторую дробь вида “a/b” где а числитель и b знаменатель: ").split("/"))
 
+# print(f'{(a * b * d) + c ** 2}/{(b ** 2 * (c * d))}')
+# print(f'{(a * c)}/{(b * d)}')
 
-print((a / b) + (c / d))
-print((a * c) / (b * d))
+# НОД
+# def lcd():
+# НОК
+# def gcd():
+#
+
 
 e = Fraction(a, b)
 f = Fraction(c, d)
 
 print(e + f)
 print(e * f)
-
