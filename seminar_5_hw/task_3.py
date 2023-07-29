@@ -3,3 +3,11 @@
 # В результате получаем словарь с именем в качестве ключа и суммой премии в качестве значения.
 # Сумма рассчитывается как ставка умноженная на процент премии
 
+names = ['Alex', 'John', 'Luke']
+bets = [100, 120, 400]
+rates = ['10.25%', '10.55%', '10.75%' ]
+
+betting_gen = {name: bet / 100 * rate for name, bet, rate in zip(names, bets, (float(rate[:-1]) for rate in rates))}
+
+print(betting_gen)
+
