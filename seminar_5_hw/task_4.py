@@ -2,7 +2,8 @@
 
 from collections.abc import Generator
 
-def fibonacci_gen(n: int) -> Generator[int]:
+
+def fibonacci_sequence(n: int) -> Generator[int]:
     n1, n2 = 0, 1
     if n > 1:
         for _ in range(n):
@@ -10,5 +11,5 @@ def fibonacci_gen(n: int) -> Generator[int]:
             n1, n2 = n2, n1 + n2
 
 
-print(*fibonacci_gen(int(input("Enter your number: "))))
+print(*fibonacci_sequence(int(input("Enter your number: "))))
 
