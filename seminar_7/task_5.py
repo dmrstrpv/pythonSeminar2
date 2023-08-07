@@ -14,4 +14,4 @@ def extensions(**kwargs):
         file_maker(ext, quantity=quant)
 
 
-extensions(txt=20, png=20)
+extensions(txt=5, png=5)

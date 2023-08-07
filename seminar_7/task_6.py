@@ -18,5 +18,5 @@ def is_dir(_path: str, **kwargs) -> None:
     task_5.extensions(**kwargs)
 
 
-is_dir(r".\\test_dir", gif=9, doc=3, txt=5, jpeg=6)
+is_dir(r".\\test_dir", gif=5, doc=5, txt=5, jpeg=6, mkv=5, mp3=5)
 

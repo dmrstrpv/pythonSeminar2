@@ -14,7 +14,7 @@ from string import ascii_lowercase, digits
 
 
 def file_maker(extn: str, _min_name_len: int = 6, _max_name_len: int = 30,
-               _min_byte_len: int = 256, _max_byte_len: int = 4096, quantity: int = 42) -> None:
+               _min_byte_len: int = 256, _max_byte_len: int = 4096, quantity: int = 10) -> None:
     for i in range(quantity):
         name = ''.join(r.choices(ascii_lowercase + digits + "_", k=r.randint(_min_name_len, _max_name_len)))
         _bytes = bytes(r.randint(0, 255) for _ in range(_min_byte_len, _max_byte_len))
